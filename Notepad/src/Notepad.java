@@ -3,7 +3,9 @@ import java.util.Scanner;
 
 public class Notepad {
     public Notepad(){}
-
+    /*
+    run() metoduyla programı çalıştırıyoruz.
+    */
     public void run (){
         read();
         Scanner input = new Scanner(System.in);
@@ -12,6 +14,10 @@ public class Notepad {
         print(text);
         read();
     }
+
+    /*
+    print() metoduyla notes.txt dosyasına yazdırıyoruz.
+     */
 
     public void print(String text){
         try {
@@ -23,6 +29,9 @@ public class Notepad {
             System.out.println(e.getMessage());
         }
     }
+    /*
+    read() metofuyla programın son çıktısını okuyoruz.
+     */
 
     public void read(){
         try {
